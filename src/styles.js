@@ -3,6 +3,8 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const cores = {
   amarelo: '#fec900',
   laranja: '#ffa800',
+  laranja_pastel: '#fcc04d',
+  laranja_claro: '#ffc85f',
   cinza: '#2c2a2b',
   cinza_claro: '#666666',
   branco: '#FFFFFF',

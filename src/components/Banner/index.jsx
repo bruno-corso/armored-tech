@@ -7,12 +7,12 @@ const BannerBackground = styled.div`
   background-image: repeating-radial-gradient(
       circle at 0 0,
       ${cores.laranja} 0,
-      ${cores.amarelo} 10px
+      ${cores.amarelo} 6px
     ),
     repeating-linear-gradient(#ffa80055, ${cores.laranja});
   background-position: 0 0;
   z-index: 0;
-  height: 100vh;
+  height: 90vh;
 `
 
 const BannerContainer = styled.div`
@@ -21,7 +21,7 @@ const BannerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 32px 10% 0 10%;
-  height: 440px;
+  height: 320px;
 `
 
 const ImagemBanner = styled.img`
@@ -32,9 +32,9 @@ const ImagemBanner = styled.img`
 
 const FraseBanner = styled.h3`
   width: 50%;
-  font-size: 48px;
+  font-size: 42px;
+  line-height: 63px;
   font-weight: 900;
-  line-height: 72px;
   color: ${cores.cinza};
 `
 
@@ -48,7 +48,7 @@ function Banner() {
     <BannerBackground>
       <BannerContainer>
         <FraseBanner>
-          Tudo o que seu pet precisa, você encontra aqui no <i>MeuAmigoPet</i>!
+          tudo o que seu pet precisa, você encontra aqui no <i>meuamigopet</i>!
         </FraseBanner>
         <ImagemBanner src={logo_completo} alt="logo meu amigo pet" />
       </BannerContainer>
