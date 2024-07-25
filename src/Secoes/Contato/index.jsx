@@ -42,9 +42,9 @@ const CardContato = styled.div`
   color: ${cores.cinza};
   padding: 24px;
   font-size: 18px;
-  width: 25%;
+  width: 40%;
   height: 25%;
-  font-weight: 400;
+  font-weight: 700;
 
   @media (max-width: 900px) {
     max-width: 500px;
@@ -60,12 +60,15 @@ function Contato() {
         <TituloContato>contato</TituloContato>
         <ContatoDiv>
           <CardContato>
-            <p>endereço</p>
-            <p>endereço</p>
-            <p>endereço</p>
-            <p>telefone</p>
-            <p>telefone</p>
-            <p>telefone</p>
+            <p>Daniel Nepomuceno</p>
+            <br />
+            <br />
+            <p>daniel@meuamigopet.com.br</p>
+            <br />
+            <br />
+            <p>+55 (11) 99168-9400 </p>
+            <br />
+            <br />
           </CardContato>
           <FormContato />
         </ContatoDiv>

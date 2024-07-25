@@ -19,7 +19,7 @@ const ContainerSobre = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `
@@ -38,9 +38,21 @@ function Sobre() {
     <ContainerBackground id="sobre-id">
       <TituloSobre>sobre</TituloSobre>
       <ContainerSobre>
-        <CardSobre />
-        <CardSobre />
-        <CardSobre />
+        <CardSobre
+          texto={
+            'com anos de experiência no mercado pet, a meuamigopet se destaca pela qualidade e confiança que proporciona aos seus franqueados e clientes.'
+          }
+        />
+        <CardSobre
+          texto={
+            'nosso compromisso é promover a saúde e o bem-estar dos pets, oferecendo uma experiência de compra agradável e produtos de alta qualidade.'
+          }
+        />
+        <CardSobre
+          texto={
+            'na meuamigopet, acreditamos que cada pet merece ser tratado com carinho e respeito, por isso trabalhamos incansavelmente para garantir a satisfação de nossos clientes.'
+          }
+        />
       </ContainerSobre>
     </ContainerBackground>
   )

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import icone from '../../assets/images/pata-de-cachorro.png'
 
 const CardDiv = styled.div`
   border: 3px solid ${cores.cinza};
@@ -8,26 +9,36 @@ const CardDiv = styled.div`
   color: ${cores.cinza};
   padding: 24px;
   font-size: 18px;
-  height: 400px;
+  height: 350px;
   width: 25%;
   box-shadow: 1px 1px 4px ${cores.cinza_claro};
   font-weight: bold;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-  @media (max-width: 900px) {
+  img {
+    width: 32px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 1100px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 1024px) {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 `
 
-function CardSobre() {
+function CardSobre({ texto }) {
   return (
     <CardDiv>
-      lorem ipsum dolor sit amet consectetur adipisicing elit. a suscipit vel
-      assumenda praesentium laborum rem sequi velit tenetur sapiente illum?
-      <br />
-      <br />
-      lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <img src={icone} alt="para de cachorro" />
+      <p>{texto}</p>
     </CardDiv>
   )
 }
