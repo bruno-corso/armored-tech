@@ -5,6 +5,7 @@ import pata from '../../assets/images/pata-de-cachorro.png'
 import { BsInfoSquareFill } from 'react-icons/bs'
 import { PiTargetBold } from 'react-icons/pi'
 import { BiSolidContact } from 'react-icons/bi'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const HeaderBar = styled.header`
   background-color: ${cores.laranja};
@@ -35,7 +36,8 @@ const ListaHeader = styled.ul`
   display: flex;
   flex-direction: row;
 
-  li {
+  li,
+  a {
     padding-left: 48px;
     text-transform: lowercase;
     font-weight: 900;
@@ -65,22 +67,28 @@ function Header() {
       <LogoHeader src={logo} alt="logo efood" />
       <ListaHeader>
         <li>
-          <span style={{ marginRight: '10px' }}>
-            <BsInfoSquareFill size={15} />
-          </span>
-          Sobre
+          <AnchorLink href="#sobre-id">
+            <span style={{ marginRight: '10px' }}>
+              <BsInfoSquareFill size={15} />
+            </span>
+            Sobre
+          </AnchorLink>
         </li>
         <li>
-          <span style={{ marginRight: '10px' }}>
-            <PiTargetBold size={20} />
-          </span>
-          Objetivo
+          <AnchorLink href="#objetivos-id">
+            <span style={{ marginRight: '10px' }}>
+              <PiTargetBold size={20} />
+            </span>
+            Objetivo
+          </AnchorLink>
         </li>
         <li>
-          <span style={{ marginRight: '10px' }}>
-            <BiSolidContact size={20} />
-          </span>
-          Contato
+          <AnchorLink href="#contato-id">
+            <span style={{ marginRight: '10px' }}>
+              <BiSolidContact size={20} />
+            </span>
+            Contato
+          </AnchorLink>
         </li>
       </ListaHeader>
     </HeaderBar>

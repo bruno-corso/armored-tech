@@ -35,7 +35,7 @@ const TituloSobre = styled.h3`
 
 function Sobre() {
   return (
-    <ContainerBackground>
+    <ContainerBackground id="sobre-id">
       <TituloSobre>sobre</TituloSobre>
       <ContainerSobre>
         <CardSobre />
