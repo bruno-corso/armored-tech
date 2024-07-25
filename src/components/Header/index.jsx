@@ -17,6 +17,11 @@ const HeaderBar = styled.header`
   width: 100%;
   padding: 16px 80px;
   border-bottom: 1px solid ${cores.cinza_claro};
+
+  @media (max-width: 500px) {
+    padding: 16px 32px;
+    flex-direction: column;
+  }
 `
 
 const LogoHeader = styled.img`
@@ -41,6 +46,16 @@ const ListaHeader = styled.ul`
       cursor: pointer;
       text-decoration: underline;
     }
+
+    @media (max-width: 500px) {
+      margin-top: 16px;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    justify-content: space-around;
   }
 `
 

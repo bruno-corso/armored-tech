@@ -9,6 +9,10 @@ const ContainerBackground = styled.div`
   @media (max-width: 900px) {
     padding: 64px 64px;
   }
+
+  @media (max-width: 500px) {
+    padding: 64px 32px;
+  }
 `
 
 const ObjetivosDiv = styled.div`

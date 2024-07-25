@@ -22,12 +22,23 @@ const BannerContainer = styled.div`
   align-items: center;
   padding: 32px 10% 0 10%;
   height: 320px;
+
+  @media (max-width: 500px) {
+    justify-content: start;
+    flex-direction: column;
+    height: 440px;
+  }
 `
 
 const ImagemBanner = styled.img`
   width: 40%;
   z-index: 1;
   max-width: 400px;
+
+  @media (max-width: 500px) {
+    width: 70%;
+    margin-top: 2rem;
+  }
 `
 
 const FraseBanner = styled.h3`
@@ -40,6 +51,13 @@ const FraseBanner = styled.h3`
   @media (max-width: 767px) {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
   }
 `
 
