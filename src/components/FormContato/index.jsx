@@ -32,6 +32,7 @@ const FormComponent = styled.form`
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    color: ${cores.preto};
   }
 
   @media (max-width: 767px) {
