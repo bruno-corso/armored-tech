@@ -21,5 +21,6 @@ module.exports = {
     ],
     'prettier/prettier': ['error', { endOfLine: 'lf' }],
     'react/prop-types': 'off',
+    'no-irregular-whitespace': ['error', { skipStrings: false }],
   },
 }
