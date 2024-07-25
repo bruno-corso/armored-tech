@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
-import Banner from './components/Banner'
-import Header from './components/Header'
-import Contato from './Secoes/Contato'
-import Objetivos from './Secoes/Objetivos'
-import Sobre from './Secoes/Sobre'
 import { cores, GlobalCss } from './styles'
+import Rotas from './routes'
+import { BrowserRouter } from 'react-router-dom'
 
 const CopyRight = styled.div`
   width: 100%;
@@ -23,20 +20,16 @@ const CopyRight = styled.div`
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalCss />
-      <Header />
-      <Banner />
-      <Sobre />
-      <Objetivos />
-      <Contato />
+      <Rotas />
       <CopyRight>
         <p>
           Direitos Reservados © 2024{' '}
           <a href="https://github.com/bruno-corso">BTC</a>{' '}
         </p>
       </CopyRight>
-    </>
+    </BrowserRouter>
   )
 }
 
