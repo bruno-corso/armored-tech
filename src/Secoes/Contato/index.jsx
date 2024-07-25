@@ -8,12 +8,20 @@ const ContatoBack = styled.div`
   background-color: ${cores.laranja_claro};
   padding: 64px 96px;
   z-index: 0;
+
+  @media (max-width: 900px) {
+    padding: 64px 64px;
+  }
 `
 const ContatoDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `
 const TituloContato = styled.h3`
   font-family: ${fontes.destaque};
@@ -33,6 +41,12 @@ const CardContato = styled.div`
   width: 25%;
   height: 25%;
   font-weight: 400;
+
+  @media (max-width: 900px) {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `
 
 function Contato() {

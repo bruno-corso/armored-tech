@@ -5,11 +5,19 @@ import CardSobre from '../../components/CardSobre'
 const ContainerBackground = styled.div`
   background-color: ${cores.laranja_claro};
   padding: 64px 96px;
+
+  @media (max-width: 900px) {
+    padding: 64px 64px;
+  }
 `
 
 const ContainerSobre = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `
 
 const TituloSobre = styled.h3`

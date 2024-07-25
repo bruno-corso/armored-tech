@@ -36,11 +36,20 @@ const FraseBanner = styled.h3`
   line-height: 63px;
   font-weight: 900;
   color: ${cores.cinza};
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 `
 
 const ImagemCachorros = styled.img`
   width: 70%;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
 `
 
 function Banner() {

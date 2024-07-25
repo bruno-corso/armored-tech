@@ -12,6 +12,12 @@ const CardDiv = styled.div`
   width: 25%;
   box-shadow: 1px 1px 4px ${cores.cinza_claro};
   font-weight: bold;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
 `
 
 function CardSobre() {

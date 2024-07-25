@@ -5,6 +5,20 @@ import gato_cachorro from '../../assets/images/gato_cachorro.png'
 const ContainerBackground = styled.div`
   background-color: ${cores.laranja_pastel};
   padding: 64px 96px;
+
+  @media (max-width: 900px) {
+    padding: 64px 64px;
+  }
+`
+
+const ObjetivosDiv = styled.div`
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const ContainerObjetivos = styled.div`
@@ -12,6 +26,10 @@ const ContainerObjetivos = styled.div`
   justify-content: space-around;
   flex-direction: column;
   width: 50%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `
 
 const TituloObjetivos = styled.h3`
@@ -42,13 +60,20 @@ const ImagemObjetivo = styled.img`
   border-radius: 10px;
   height: 350px;
   box-shadow: 2px 2px 5px ${cores.laranja};
+
+  @media (max-width: 900px) {
+    width: 60%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
 `
 
 function Objetivos() {
   return (
     <ContainerBackground>
       <TituloObjetivos>objetivos</TituloObjetivos>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <ObjetivosDiv>
+        <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" />
         <ContainerObjetivos>
           <TopicoObjetivo>
             <p>objetivo ###</p>
@@ -60,8 +85,7 @@ function Objetivos() {
             <p>objetivo ###</p>
           </TopicoObjetivo>
         </ContainerObjetivos>
-        <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" />
-      </div>
+      </ObjetivosDiv>
     </ContainerBackground>
   )
 }

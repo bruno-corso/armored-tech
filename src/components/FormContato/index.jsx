@@ -33,6 +33,11 @@ const FormComponent = styled.form`
     cursor: pointer;
     font-weight: bold;
   }
+
+  @media (max-width: 767px) {
+    max-width: 500px;
+    width: 100%;
+  }
 `
 
 function FormContato() {
