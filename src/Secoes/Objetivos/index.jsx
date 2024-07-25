@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { cores, fontes } from '../../styles'
 import gato_cachorro from '../../assets/images/gato_cachorro.png'
+import { TbDog } from 'react-icons/tb'
+import { LuCat, LuBird } from 'react-icons/lu'
 
 const ContainerBackground = styled.div`
   background-color: ${cores.laranja_pastel};
@@ -80,13 +82,20 @@ function Objetivos() {
         <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" />
         <ContainerObjetivos>
           <TopicoObjetivo>
-            <p>objetivo ###</p>
+            <TbDog size={30} />
+            <p style={{ marginLeft: '10px' }}>
+              garantir o melhor cuidado para pets
+            </p>
           </TopicoObjetivo>
           <TopicoObjetivo>
-            <p>objetivo ###</p>
+            <LuCat size={30} />
+            <p style={{ marginLeft: '10px' }}>inovar no mercado pet</p>
           </TopicoObjetivo>
           <TopicoObjetivo>
-            <p>objetivo ###</p>
+            <LuBird size={30} />
+            <p style={{ marginLeft: '10px' }}>
+              Fortalecer a marca <i>meuamigopet</i>
+            </p>
           </TopicoObjetivo>
         </ContainerObjetivos>
       </ObjetivosDiv>
