@@ -74,7 +74,7 @@ const ImagemObjetivo = styled.img`
 
 function Objetivos() {
   return (
-    <ContainerBackground>
+    <ContainerBackground id="objetivos-id">
       <TituloObjetivos>objetivos</TituloObjetivos>
       <ObjetivosDiv>
         <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" />
