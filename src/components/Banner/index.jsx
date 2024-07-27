@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
-import logo_completo from '../../assets/images/logo_completo.png'
-import cachorros from '../../assets/images/cachorros.png'
+import logo from '../../assets/images/logo_armored_tech.png'
+import foto from '../../assets/images/robo_investigando.jpg'
 
 const BannerBackground = styled.div`
   background-image: repeating-radial-gradient(
@@ -12,32 +12,31 @@ const BannerBackground = styled.div`
     repeating-linear-gradient(#ffa80055, ${cores.laranja});
   background-position: 0 0;
   z-index: 0;
-  height: 90vh;
+  /* height: 90vh; */
 `
 
 const BannerContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 32px 10% 0 10%;
-  height: 320px;
+  padding: 100px 40px;
+  gap: 2rem;
 
   @media (max-width: 500px) {
     justify-content: start;
     flex-direction: column;
-    height: 440px;
   }
 `
 
-const ImagemBanner = styled.img`
+const LogoBanner = styled.img`
   width: 40%;
   z-index: 1;
   max-width: 400px;
 
   @media (max-width: 500px) {
-    width: 70%;
-    margin-top: 2rem;
+    width: 90%;
+    /* margin-top: 2rem; */
   }
 `
 
@@ -45,13 +44,9 @@ const FraseBanner = styled.h3`
   width: 50%;
   font-size: 42px;
   line-height: 63px;
-  font-weight: 900;
+  font-weight: 300;
   color: ${cores.cinza};
-
-  @media (max-width: 767px) {
-    font-size: 32px;
-    line-height: 48px;
-  }
+  text-transform: uppercase;
 
   @media (max-width: 500px) {
     width: 100%;
@@ -60,27 +55,22 @@ const FraseBanner = styled.h3`
     text-align: center;
   }
 `
-
-const ImagemCachorros = styled.img`
-  width: 70%;
+const FotoBanner = styled.img`
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
-
-  @media (max-width: 767px) {
-    width: 90%;
-  }
+  text-align: center;
 `
 
 function Banner() {
   return (
     <BannerBackground>
       <BannerContainer>
-        <FraseBanner>
-          tudo o que seu pet precisa, você encontra aqui no <i>meuamigopet</i>!
-        </FraseBanner>
-        <ImagemBanner src={logo_completo} alt="logo meu amigo pet" />
+        <LogoBanner src={logo} alt="logo armored tech" />
+        <FraseBanner>Defesa total da sua reputação digital.</FraseBanner>
       </BannerContainer>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <ImagemCachorros src={cachorros} alt="cachorros" />
+      <div style={{ textAlign: 'center' }}>
+        <FotoBanner src={foto} alt="robo investigando" />
       </div>
     </BannerBackground>
   )

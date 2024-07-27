@@ -4,30 +4,30 @@ import CardSobre from '../../components/CardSobre'
 
 const ContainerBackground = styled.div`
   background-color: ${cores.laranja_claro};
-  padding: 64px 96px;
+  padding: 32px 96px;
 
   @media (max-width: 900px) {
-    padding: 64px 64px;
+    padding: 32px 32px;
   }
 
   @media (max-width: 500px) {
-    padding: 64px 32px;
+    padding: 32px 32px;
   }
 `
 
 const ContainerSobre = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
   }
 `
 
 const TituloSobre = styled.h3`
   font-family: ${fontes.destaque};
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 32px;
   padding-bottom: 16px;
   border-bottom: 1px solid ${cores.laranja};
@@ -36,21 +36,21 @@ const TituloSobre = styled.h3`
 function Sobre() {
   return (
     <ContainerBackground id="sobre-id">
-      <TituloSobre>sobre</TituloSobre>
+      <TituloSobre>NOSSOS SERVIÇOS</TituloSobre>
       <ContainerSobre>
         <CardSobre
           texto={
-            'com anos de experiência no mercado pet, a meuamigopet se destaca pela qualidade e confiança que proporciona aos seus franqueados e clientes.'
+            'A gestão de reputação digital envolve monitorar, influenciar e controlar como uma marca, empresa ou indivíduo é percebido online. Isso inclui análise de menções, gerenciamento de avaliações, otimização de conteúdo positivo e mitigação de conteúdo negativo para promover uma imagem forte e favorável na internet.'
           }
         />
         <CardSobre
           texto={
-            'nosso compromisso é promover a saúde e o bem-estar dos pets, oferecendo uma experiência de compra agradável e produtos de alta qualidade.'
+            'Você já enfrentou problemas com processos judiciais na internet que atrapalham sua vida digital? Oferecemos um serviço especializado de remoção de processos judiciais, garantindo uma presença online sem obstáculos legais.'
           }
         />
         <CardSobre
           texto={
-            'na meuamigopet, acreditamos que cada pet merece ser tratado com carinho e respeito, por isso trabalhamos incansavelmente para garantir a satisfação de nossos clientes.'
+            'Oferecemos soluções eficazes para a remoção de conteúdo indesejado na internet. Combinamos expertise em marketing digital e assessoria jurídica para fornecer soluções inovadoras e personalizadas para cada cliente.'
           }
         />
       </ContainerSobre>

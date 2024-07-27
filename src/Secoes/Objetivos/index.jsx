@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { cores, fontes } from '../../styles'
-import gato_cachorro from '../../assets/images/gato_cachorro.png'
 import { TbDog } from 'react-icons/tb'
 import { LuCat, LuBird } from 'react-icons/lu'
 
@@ -79,7 +78,7 @@ function Objetivos() {
     <ContainerBackground id="objetivos-id">
       <TituloObjetivos>objetivos</TituloObjetivos>
       <ObjetivosDiv>
-        <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" />
+        {/* <ImagemObjetivo src={gato_cachorro} alt="gato e cacgorro" /> */}
         <ContainerObjetivos>
           <TopicoObjetivo>
             <TbDog size={30} />

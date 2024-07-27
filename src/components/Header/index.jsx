@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 import { cores, fontes } from '../../styles'
-import logo from '../../assets/images/logo_meuamigopet.png'
-import pata from '../../assets/images/pata-de-cachorro.png'
 import { BsInfoSquareFill } from 'react-icons/bs'
 import { PiTargetBold } from 'react-icons/pi'
 import { BiSolidContact } from 'react-icons/bi'
@@ -10,7 +8,6 @@ import { Link } from 'react-router-dom'
 
 const HeaderBar = styled.header`
   background-color: ${cores.laranja};
-  background-image: ${pata};
   background-repeat: repeat;
   display: flex;
   align-items: center;
@@ -18,6 +15,7 @@ const HeaderBar = styled.header`
   justify-content: space-between;
   width: 100%;
   padding: 16px 80px;
+  padding-top
   border-bottom: 1px solid ${cores.cinza_claro};
 
   @media (max-width: 700px) {
@@ -89,7 +87,7 @@ const LoginLink = styled.a`
 function Header() {
   return (
     <HeaderBar>
-      <LogoHeader src={logo} alt="logo efood" />
+      {/* <LogoHeader src={logo} alt="logo efood" /> */}
       <ListaHeader>
         <li>
           <AnchorLink href="#sobre-id">

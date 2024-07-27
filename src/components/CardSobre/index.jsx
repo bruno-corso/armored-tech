@@ -1,22 +1,25 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
-import icone from '../../assets/images/pata-de-cachorro.png'
+import { TbShieldSearch } from 'react-icons/tb'
 
 const CardDiv = styled.div`
-  border: 3px solid ${cores.cinza};
-  border-radius: 10px;
+  border-bottom: 4px solid ${cores.destaque_neutro};
+  border-right: 4px solid ${cores.destaque_neutro};
+  border-top: 1px solid ${cores.destaque_neutro};
+  border-left: 1px solid ${cores.destaque_neutro};
   background-color: ${cores.amarelo};
   color: ${cores.cinza};
   padding: 24px;
   font-size: 18px;
-  height: 350px;
   width: 25%;
-  box-shadow: 1px 1px 4px ${cores.cinza_claro};
-  font-weight: bold;
+  font-weight: 300;
   line-height: 32px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+  gap: 1rem;
 
   img {
     width: 32px;
@@ -28,16 +31,15 @@ const CardDiv = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: 100%;
     height: auto;
-    margin-bottom: 8px;
+    margin-bottom: 1.5rem;
   }
 `
 
 function CardSobre({ texto }) {
   return (
     <CardDiv>
-      <img src={icone} alt="para de cachorro" />
+      <TbShieldSearch size={30} />
       <p>{texto}</p>
     </CardDiv>
   )
